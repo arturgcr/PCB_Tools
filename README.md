@@ -6,18 +6,45 @@ Welcome to the **PCB_Tools** repository. This project aims to provide a comprehe
 
 ## Contents
 
-### 1. Schematic Librarie
-### 2. PCB Librarie
-### 3. Manufacturing Rules
+#### 1. Schematic Librarie
+#### 2. PCB Librarie
+#### 3. Manufacturing Rules
 
-## How to Use
+## Naming Convention
 
-1. **Clone the Repository:** Clone this repository to your local machine to access all the available resources.
-    ```bash
-    git clone https://github.com/your-username/PCB_Tools.git
-    ```
-2. **Explore the Folders:** Navigate through the folders to find the components schematics, footprints, and manufacturing rules.
-3. **Implement in Your Projects:** Use the provided files and rules to enhance the design and manufacturing of your PCBs.
+To maintain consistency and clarity, the libraries follow a specific naming convention for both schematics and PCBs.
+
+### Schematic:
+
+```
+(THT/SMD) component_name (details)
+```
+
+- **THT/SMD:** Indicates whether the component is Through-Hole Technology (THT) or Surface-Mount Device (SMD).
+- **component_name:** The name of the component, such as resistor, capacitor, transistor, etc.
+- **(details):** Additional information about the component.
+
+**Example:**
+
+- `THT Resistor`
+- `ESP32-S3 IC`
+
+### PCB:
+
+```
+(THT/SMD) component_name (package/specifications)
+```
+
+- **THT/SMD:** Indicates whether the component is Through-Hole Technology (THT) or Surface-Mount Device (SMD).
+- **component_name:** The name of the component, such as resistor, capacitor, transistor, etc.
+- **(package/specifications):** Details about the component's package type and specifications.
+
+**Example:**
+
+- `SMD Capacitor 0603`
+- `SMD TQFP-32/ATmega328P IC`
+
+This naming convention ensures that all components are easily identifiable and their specifications and package types are clearly understood.
 
 ---
 
